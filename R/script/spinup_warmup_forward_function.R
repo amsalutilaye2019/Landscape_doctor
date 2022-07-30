@@ -4,10 +4,10 @@ spinwarmforward_stack <- function(aoi_path, raster_path, output_path){
 rm(list = ls())
 
 message(noquote("Loading necessary packages ..."))
-library(raster)
-library(rgdal)
-library(dplyr)
-library(sp)
+require(raster)
+require(rgdal)
+require(dplyr)
+require(sp)
 
 WD_AOI <- aoi_path
 WD_RASTERS <- raster_path
