@@ -3,7 +3,8 @@
 lu_esa_fao <- function(landuse_path, output_path){
 
   rm(list = ls())
-  
+
+  message(noquote("Loading necessary packages ..."))
   require(raster)
   require(rgdal)
   require(sp)
@@ -13,6 +14,7 @@ lu_esa_fao <- function(landuse_path, output_path){
   WD_OUT <- output_path
   
   setwd(WD_LU)
+  message(noquote("Reading landuse raster ..."))
   ESA_LU_AOI <- raster("2016_LULC_Level_I.tif")
   
   #plot(ESA_LU_AOI)
@@ -34,11 +36,13 @@ lu_esa_fao <- function(landuse_path, output_path){
   recMat <- matrix(c(is, become), ncol = 2, nrow = 11)
   
   #Reclassify
+  message(noquote("reclassifying landuse to FAO class ..."))
   ESA_FAO <- reclassify(ESA_LU_AOI, recMat)
   setwd(WD_SOC)
   
   #Save Landuse raster
   setwd(WD_OUT)
+  message(noquote("Writing the reclassed landuse raster ..."))
   writeRaster(ESA_FAO,
               filename = "Land_Cover_10class_AOI.tif",
               format = 'GTiff',

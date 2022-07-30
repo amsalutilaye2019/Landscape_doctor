@@ -2,7 +2,9 @@
 
 generatePoints <- function(lu_path, output_path){
   setwd(lu_path)
+  message(noquote("Reading landuse raster ..."))
   lu <- raster("Land_Cover_10class_AOI.tif")
+  message(noquote("Generating target points ..."))
   point <-
     rasterToPoints(
       x = lu,
@@ -12,6 +14,7 @@ generatePoints <- function(lu_path, output_path){
       spatial = TRUE
     )
   setwd(output_path)
+  message(noquote("Writing target points ..."))
   writeOGR(point, dsn = ".", layer = "eth_points", driver = "ESRI Shapefile", overwrite_layer = T)
 }
 
