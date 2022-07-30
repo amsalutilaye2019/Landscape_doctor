@@ -1,5 +1,6 @@
-# Create a points for crops, grassland and trees
-
+# ------------------------------------------------------------------------------
+# Create target points for crops, grassland and trees for the area of interest
+# ------------------------------------------------------------------------------
 generatePoints <- function(lu_path, output_path){
 
   rm(list = ls())

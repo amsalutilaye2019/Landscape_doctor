@@ -1,5 +1,8 @@
 
-# Convert Landuse to FAO classes
+# ------------------------------------------------------------------------------
+# Script to convert Landuse class to FAO class
+# ------------------------------------------------------------------------------
+
 lu_esa_fao <- function(landuse_path, output_path){
 
   rm(list = ls())
