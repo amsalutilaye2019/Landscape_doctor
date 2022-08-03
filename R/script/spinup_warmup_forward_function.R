@@ -3,7 +3,6 @@
 # ------------------------------------------------------------------------------
 
 spinwarmforward_stack <- function(aoi_path, raster_path, output_path){
-rm(list = ls())
 
 message(noquote("Loading necessary packages ..."))
 require(raster)

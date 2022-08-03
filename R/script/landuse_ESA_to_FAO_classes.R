@@ -5,8 +5,6 @@
 
 lu_esa_fao <- function(landuse_path, output_path){
 
-  rm(list = ls())
-
   message(noquote("Loading necessary packages ..."))
   require(raster)
   require(rgdal)
