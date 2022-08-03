@@ -1,3 +1,6 @@
+# ------------------------------------------------------------------------------
+# Script to perform the spin-up process
+# ------------------------------------------------------------------------------
 
 rm(list = ls()) 
 rothC_Warmup <-
@@ -328,9 +331,9 @@ rothC_Warmup("C:/Users/ATilaye/Documents/01My_Docs/01CIAT/08RothC/Ethiopia_for_l
             "C:\\Users\\ATilaye\\Documents\\01My_Docs\\01CIAT\\08RothC\\Ethiopia_for_ld3\\data\\final\\woreda_test\\stacks",
            "Stack_Set_WARM_UP_woreda.tif",
            "C:\\Users\\ATilaye\\Documents\\01My_Docs\\01CIAT\\08RothC\\Ethiopia_for_ld3\\data\\final\\woreda_test\\stacks",
-           "Prec_Stack_00-18_CRU_woreda.tif",#precipitation 01_18
-           "PET_Stack_00-18_CRU_woreda.tif",#pet 01_18
-           "Temp_Stack_00-18_CRU_woreda.tif",#temp 01_18
+           "Prec_Stack_00-18_CRU_woreda.tif", 
+           "PET_Stack_00-18_CRU_woreda.tif",
+           "Temp_Stack_00-18_CRU_woreda.tif",
            "C:\\Users\\ATilaye\\Documents\\01My_Docs\\01CIAT\\08RothC\\Ethiopia_for_ld3\\data\\final\\woreda_test\\stacks",
            "NPP_MIAMI_MEAN_81-00_woreda.tif",
            "NPP_MIAMI_MEAN_81-00_woreda_MIN.tif",
