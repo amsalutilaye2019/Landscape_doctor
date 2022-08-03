@@ -309,6 +309,8 @@ rothC_Forward <-
     colnames(FOWARD@data)[21] <- "UNC_SSM"
     
     # SAVE the Points (shapefile)
+    setwd(output_path)
+    message(noquote("Saving output ..."))
     writeOGR(FOWARD,
              ".",
              output_name,
