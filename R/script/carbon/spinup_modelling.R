@@ -2,7 +2,7 @@
 # Script to perform the spin-up process
 # ------------------------------------------------------------------------------
 
-rm(list=ls())
+rm(list = ls())
 rothC_Spinup <-
   function(pts_path,
            target_points,
