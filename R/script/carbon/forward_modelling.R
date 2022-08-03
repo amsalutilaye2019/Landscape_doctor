@@ -322,5 +322,5 @@ rothC_Forward <-
 rothC_Forward("C:/Users/ATilaye/Documents/01My_Docs/01CIAT/08RothC/Ethiopia_for_ld3/data/final/woreda_test/points", "woreda_points.shp",
               "C:\\Users\\ATilaye\\Documents\\01My_Docs\\01CIAT\\08RothC\\Ethiopia_for_ld3\\data\\final\\woreda_test\\output",
               "WARM_UP_woreda.shp",
-             "C:\\Users\\ATilaye\\Documents\\01My_Docs\\01CIAT\\08RothC\\Ethiopia_for_ld3\\data\\final\\woreda_test\\stacks", "Stack_Set_FORWARD_woreda.tif", 5,
+             "C:\\Users\\ATilaye\\Documents\\01My_Docs\\01CIAT\\08RothC\\Ethiopia_for_ld3\\data\\final\\woreda_test\\stacks", "Stack_Set_FORWARD_woreda.tif", 3,
              "C:\\Users\\ATilaye\\Documents\\01My_Docs\\01CIAT\\08RothC\\Ethiopia_for_ld3\\data\\final\\woreda_test\\output", "aoi_forward")

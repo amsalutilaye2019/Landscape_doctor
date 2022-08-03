@@ -3,7 +3,7 @@
 # Script to convert Landuse class to FAO class
 # ------------------------------------------------------------------------------
 
-lu_esa_fao <- function(landuse_path, output_path){
+lu_ESA_FAO <- function(landuse_path, output_path){
 
   message(noquote("Loading necessary packages ..."))
   require(raster)

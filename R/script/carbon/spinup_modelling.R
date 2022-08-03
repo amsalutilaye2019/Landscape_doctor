@@ -8,7 +8,7 @@ rothC_Spinup <-
            target_points,
            spinup_stack_path,
            spinup_stack,
-           year = 500,
+           year = 500, #equilibrium year 
            output_path,
            output_name) {
     

@@ -2,7 +2,7 @@
 # Prepare stacks for the spin up, warm up & forward process of the Roth C Model
 # ------------------------------------------------------------------------------
 
-spinwarmforward_stack <- function(aoi_path, raster_path, output_path){
+spinWarmForward_Stack <- function(aoi_path, raster_path, output_path){
 
 message(noquote("Loading necessary packages ..."))
 require(raster)
