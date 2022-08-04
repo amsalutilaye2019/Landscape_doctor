@@ -1,0 +1,11 @@
+C-factor can be estimated doirectly from remote sensing products like NDVI (MODIS) usig thd (Knijff et al., 2000) method 
+C=exp(2.5* NDVI/1-NDVI)
+
+C=exp(2.5* NDVI/1-NDVI)
+
+calculate_c_knijff <- function(ndvi) {
+alpha <- 2 # as suggested by Knijff 2000
+beta <- 1 # as suggested by Knijff 2000
+c <- min(exp(-alpha * (ndvi/(beta - ndvi))), 1)
+return(c)
+}
