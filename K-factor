@@ -1,0 +1,21 @@
+calculate_k_williams <- function(sndprc, sltprc, clyprc, orcprc){
+a <- (0.2 + 0.3*exp(-0.0256*sndprc*(1 - sltprc/100)))
+b <- (sltprc/(clyprc + sltprc))^0.3
+c <- 1 - (0.25*orcprc)/(orcprc + exp(3.72 - 2.95*orcprc))
+sn1 <- 1 - sndprc/100
+d <- 1 - (0.7*sn1)/(sn1 + exp(-5.51 + 22.9*sn1))
+k <- 0.1317*a*b*c*d
+return(k)
+}
+Before calculating K we have to load the soil layers into R. As these are raster layers, we again
+use the command raster() :
+# The input file paths
+sand_file <- "data/soil/SNDPPT_M_sl1_250m.tif"
+silt_file <- "data/soil/SLTPPT_M_sl1_250m.tif"
+clay_file <- "data/soil/CLYPPT_M_sl1_250m.tif"
+orgc_file <- "data/soil/ORCDRC_M_sl1_250m.tif"
+#Loading the raster files
+sand <- raster(sand_file)
+silt <- raster(silt_file)
+clay <- raster(clay_file)
+orgc <- raster(orgc_file)
