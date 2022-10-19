@@ -1,4 +1,6 @@
+#-------------------------------------------------------------------------------
 # Function to calculate soil erodability K using K_williams
+#-------------------------------------------------------------------------------
 
 calculateK <- function(input_wd, aoi, sand, silt, clay, orgc){
     # silt and clay are percent but orgc should be divided by 10 to get percent
